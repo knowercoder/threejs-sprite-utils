@@ -1,0 +1,22 @@
+{
+  "name": "texturepacker-animator-threejs",
+  "version": "1.0.0",
+  "description": "Sprite animation with the sprite sheet generated from TexurePackaer, for three.js",
+  "main": "index.js",
+  "keywords": [],
+  "author": "KnowerCoder",
+  "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "three": "^0.171.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0",
+    "vite": "^6.0.6"
+  }
+}
