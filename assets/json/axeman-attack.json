@@ -1,0 +1,260 @@
+{"frames": [
+
+{
+	"filename": "axeman_blue_c_0093.png",
+	"frame": {"x":0,"y":354,"w":133,"h":148},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":160,"y":188,"w":133,"h":148},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0094.png",
+	"frame": {"x":133,"y":361,"w":133,"h":148},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":160,"y":188,"w":133,"h":148},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0095.png",
+	"frame": {"x":852,"y":252,"w":132,"h":147},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":160,"y":189,"w":132,"h":147},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0096.png",
+	"frame": {"x":587,"y":245,"w":132,"h":144},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":159,"y":193,"w":132,"h":144},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0097.png",
+	"frame": {"x":876,"y":120,"w":133,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":156,"y":206,"w":133,"h":132},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0098.png",
+	"frame": {"x":847,"y":0,"w":142,"h":120},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":155,"y":220,"w":142,"h":120},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0099.png",
+	"frame": {"x":557,"y":0,"w":142,"h":116},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":150,"y":225,"w":142,"h":116},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0100.png",
+	"frame": {"x":744,"y":120,"w":132,"h":129},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":160,"y":212,"w":132,"h":129},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0101.png",
+	"frame": {"x":194,"y":219,"w":107,"h":142},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":185,"y":199,"w":107,"h":142},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0102.png",
+	"frame": {"x":598,"y":117,"w":146,"h":128},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":178,"y":213,"w":146,"h":128},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0103.png",
+	"frame": {"x":301,"y":103,"w":159,"h":125},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":190,"y":216,"w":159,"h":125},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0104.png",
+	"frame": {"x":301,"y":228,"w":153,"h":136},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":203,"y":205,"w":153,"h":136},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0105.png",
+	"frame": {"x":0,"y":93,"w":142,"h":123},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":194,"y":233,"w":142,"h":123},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0106.png",
+	"frame": {"x":142,"y":96,"w":159,"h":123},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":139,"y":223,"w":159,"h":123},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0107.png",
+	"frame": {"x":0,"y":509,"w":185,"h":168},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":108,"y":259,"w":185,"h":168},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0108.png",
+	"frame": {"x":185,"y":512,"w":183,"h":175},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":253,"w":183,"h":175},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0109.png",
+	"frame": {"x":368,"y":533,"w":184,"h":180},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":247,"w":184,"h":180},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0110.png",
+	"frame": {"x":735,"y":562,"w":184,"h":182},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":245,"w":184,"h":182},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0111.png",
+	"frame": {"x":552,"y":554,"w":183,"h":180},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":247,"w":183,"h":180},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0112.png",
+	"frame": {"x":765,"y":399,"w":184,"h":163},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":109,"y":263,"w":184,"h":163},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0113.png",
+	"frame": {"x":582,"y":394,"w":183,"h":160},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":263,"w":183,"h":160},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0114.png",
+	"frame": {"x":399,"y":380,"w":183,"h":153},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":114,"y":262,"w":183,"h":153},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0115.png",
+	"frame": {"x":0,"y":219,"w":194,"h":135},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":257,"w":194,"h":135},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0116.png",
+	"frame": {"x":0,"y":0,"w":199,"h":93},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":113,"y":254,"w":199,"h":93},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0117.png",
+	"frame": {"x":199,"y":0,"w":190,"h":96},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":127,"y":245,"w":190,"h":96},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0118.png",
+	"frame": {"x":389,"y":0,"w":168,"h":103},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":144,"y":240,"w":168,"h":103},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0119.png",
+	"frame": {"x":699,"y":0,"w":148,"h":117},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":149,"y":229,"w":148,"h":117},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0120.png",
+	"frame": {"x":460,"y":116,"w":138,"h":126},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":154,"y":215,"w":138,"h":126},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0121.png",
+	"frame": {"x":454,"y":242,"w":133,"h":138},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":157,"y":202,"w":133,"h":138},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0122.png",
+	"frame": {"x":719,"y":249,"w":133,"h":145},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":159,"y":192,"w":133,"h":145},
+	"sourceSize": {"w":512,"h":512}
+},
+{
+	"filename": "axeman_blue_c_0123.png",
+	"frame": {"x":266,"y":364,"w":133,"h":148},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":160,"y":188,"w":133,"h":148},
+	"sourceSize": {"w":512,"h":512}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "axeman-attack.png",
+	"format": "RGBA4444",
+	"size": {"w":1009,"h":744},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:149ea01be665048fb86c0448b9d8e87b:279a91d1b853a26919cd396972d14595:fc77a4ac8a0932f01809d51b3fd717eb$"
+}
+}
