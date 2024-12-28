@@ -6,7 +6,7 @@ const canvas = document.querySelector('canvas.webgl');
 
 //load spritesheet
 const textureLoader = new THREE.TextureLoader();
-const spritesheet = textureLoader.load('/src/assets/img/axeman-run-red.png');
+const spritesheet = textureLoader.load('./assets/img/axeman-run-red.png');
 
 //load json
 function loadJSON(path) {
@@ -23,7 +23,7 @@ let frames = [];
 let atlasSize = { w: 0, h: 0 };
 let isDataLoaded = false;
 
-loadJSON('/src/assets/json/axeman-run-red.json')
+loadJSON('./assets/json/axeman-run-red.json')
     .then(data => {
       frames = data.frames; 
       atlasSize = data.meta.size;
