@@ -1,14 +1,25 @@
 import * as THREE from 'three';
 import { SpriteShader } from './SpriteShader';
 
+// Select DOM elements
+const spriteFileInput = document.getElementById('spriteFileInput');
+const jsonFileInput = document.getElementById('jsonFileInput');
+const spriteFileStatus = document.getElementById('spriteFileStatus');
+const jsonFileStatus = document.getElementById('jsonFileStatus');
+
 // Canvas
 const canvas = document.querySelector('canvas.webgl');
 
-//load spritesheet
+//init variables
 const textureLoader = new THREE.TextureLoader();
-const spritesheet = textureLoader.load('./assets/img/axeman-run-red.png');
+let spritesheet = null;
+let frames = [];
+let atlasSize = { w: 0, h: 0 };
+let isDataLoaded = false;
+let frameRate = 25;
+let frameDuration = 1000 / frameRate;
 
-//load json
+//load json function
 function loadJSON(path) {
     return fetch(path)
       .then(response => {
@@ -18,18 +29,6 @@ function loadJSON(path) {
         return response.json();
       });
   }
-
-let frames = [];
-let atlasSize = { w: 0, h: 0 };
-let isDataLoaded = false;
-
-loadJSON('./assets/json/axeman-run-red.json')
-    .then(data => {
-      frames = data.frames; 
-      atlasSize = data.meta.size;
-      material.uniforms._spriteAtlasSize.value.set(atlasSize.w, atlasSize.h);
-      isDataLoaded = true;
-    });
 
 
 //#region  Scene and renderers
@@ -57,7 +56,7 @@ renderer.setPixelRatio(window.devicePixelRatio);
 
 const material = new THREE.ShaderMaterial({    
     uniforms: {
-        _spriteAtlasTex: { value: spritesheet },
+        _spriteAtlasTex: { value: null },
         _spriteAtlasSize: { value: new THREE.Vector2(0, 0) }, // size
         _sourceSize: { value: new THREE.Vector2(0, 0) }, // sourceSize
         _spriteSourceSize: { value: new THREE.Vector4(0, 0, 0, 0) }, // spriteSourceSize
@@ -85,8 +84,6 @@ window.addEventListener('resize', () => {
 });
 
 let currentFrame = 0;
-const frameRate = 25;
-const frameDuration = 1000 / frameRate;
 let lastFrameTime = Date.now();
 function animate() {
     requestAnimationFrame(animate);
@@ -108,3 +105,50 @@ function animate() {
 }
 
 animate();
+
+
+/* ------------------------------------------------------------------
+   FILE INPUT LOGIC
+------------------------------------------------------------------ */
+
+// Load a local sprite (png/jpg) file
+spriteFileInput.addEventListener('change', (e) => {
+  const file = e.target.files && e.target.files[0];
+  if (!file) return;
+
+  const localURL = URL.createObjectURL(file);
+  spritesheet = textureLoader.load(localURL, () => {
+    spriteFileStatus.textContent = `Sprite loaded: ${file.name}`;
+    material.uniforms._spriteAtlasTex.value = spritesheet;
+  });
+});
+
+// Load a local JSON file
+jsonFileInput.addEventListener('change', (e) => {
+  const file = e.target.files && e.target.files[0];
+  if (!file) return;
+
+  const localURL = URL.createObjectURL(file);
+
+  loadJSON(localURL)
+    .then((data) => {
+      frames = data.frames;
+      atlasSize = data.meta.size;
+      material.uniforms._spriteAtlasSize.value.set(atlasSize.w, atlasSize.h);
+      isDataLoaded = true;
+
+      jsonFileStatus.textContent = `JSON loaded: ${file.name}`;
+    })
+    .catch((err) => {
+      console.error('Error loading JSON:', err);
+    });
+});
+
+// Grab the frame rate input element
+const frameRateInput = document.getElementById('frameRateInput');
+
+frameRateInput.addEventListener('change', (e) => {
+  const newFrameRate = parseInt(e.target.value, 10) || 25;
+  frameRate = newFrameRate;  
+  frameDuration = 1000 / frameRate;
+});
