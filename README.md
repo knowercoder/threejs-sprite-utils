@@ -20,6 +20,6 @@ Shader Uniforms:
 - _isRotated: rotated
 
 ### Thank you
-Special thanks to [Josema](https://github.com/Josema) for heling me on this project!
+Thanks to [Josema](https://github.com/Josema) for helping me on this project!
 
 
