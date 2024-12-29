@@ -55,9 +55,9 @@ renderer.setPixelRatio(window.devicePixelRatio);
 //#endregion
 
 const material = new THREE.ShaderMaterial({    
-    uniforms: {
-      _frame: { value: new THREE.Vector4(0, 0, 0, 0) }, // frame    
+    uniforms: {       
       _spriteAtlasTex: { value: null }, // sprite from texture packer
+      _frame: { value: new THREE.Vector4(0, 0, 0, 0) }, // frame   
       _spriteAtlasSize: { value: new THREE.Vector2(0, 0) }, // size
       _sourceSize: { value: new THREE.Vector2(0, 0) }, // sourceSize
       _spriteSourceSize: { value: new THREE.Vector4(0, 0, 0, 0) }, // spriteSourceSize
