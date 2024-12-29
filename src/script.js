@@ -56,11 +56,13 @@ renderer.setPixelRatio(window.devicePixelRatio);
 
 const material = new THREE.ShaderMaterial({    
     uniforms: {
-        _spriteAtlasTex: { value: null },
-        _spriteAtlasSize: { value: new THREE.Vector2(0, 0) }, // size
-        _sourceSize: { value: new THREE.Vector2(0, 0) }, // sourceSize
-        _spriteSourceSize: { value: new THREE.Vector4(0, 0, 0, 0) }, // spriteSourceSize
-        _frame: { value: new THREE.Vector4(0, 0, 0, 0) } // frame       
+      _frame: { value: new THREE.Vector4(0, 0, 0, 0) }, // frame    
+      _spriteAtlasTex: { value: null }, // sprite from texture packer
+      _spriteAtlasSize: { value: new THREE.Vector2(0, 0) }, // size
+      _sourceSize: { value: new THREE.Vector2(0, 0) }, // sourceSize
+      _spriteSourceSize: { value: new THREE.Vector4(0, 0, 0, 0) }, // spriteSourceSize
+      _isRotated: {value: false} // rotated
+           
     },
     vertexShader: SpriteShader.vertexShader,
     fragmentShader: SpriteShader.fragmentShader,
@@ -90,15 +92,25 @@ function animate() {
 
     const now = Date.now();
 
+    //if json data loaded, set the material uniforms
     if (isDataLoaded && (now - lastFrameTime >= frameDuration)) {
       currentFrame = (currentFrame + 1) % frames.length;
       const frame = frames[currentFrame].frame;
       const sourceSize = frames[currentFrame].sourceSize;
       const spriteSourceSize = frames[currentFrame].spriteSourceSize;
+      const rotated = frames[currentFrame].rotated;
       material.uniforms._frame.value.set(frame.x, frame.y, frame.w, frame.h);
       material.uniforms._sourceSize.value.set(sourceSize.w, sourceSize.h);
       material.uniforms._spriteSourceSize.value.set(spriteSourceSize.x, spriteSourceSize.y, spriteSourceSize.w, spriteSourceSize.h);
+      material.uniforms._isRotated.value = rotated;
       lastFrameTime = now;
+
+      //scale the plane acording to the source aspect ratio
+      const aspect = sourceSize.w/sourceSize.h;
+      if(aspect > 1.0){
+        plane.scale.set(1.0, 1.0/aspect, 1.0);
+      }else
+        plane.scale.set(aspect, 1.0, 1.0);
     }
 
     renderer.render(scene, camera);
@@ -144,7 +156,7 @@ jsonFileInput.addEventListener('change', (e) => {
     });
 });
 
-// Grab the frame rate input element
+// frame rate input element
 const frameRateInput = document.getElementById('frameRateInput');
 
 frameRateInput.addEventListener('change', (e) => {
