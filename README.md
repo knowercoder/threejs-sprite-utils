@@ -9,7 +9,7 @@ Here is a [Live demo](https://knowercoder.github.io/TexturePacker-Animator-Three
 
 ## How it works
 
-The sprite is rendered onto a plane mesh with a custom shader material. You can find the shader code in 'SpriteShader.js'. The shader will render a single sprite sequence based on input uniforms. Each uniform corresponds to a value from the Json data.
+The sprite is rendered onto a plane mesh with a custom shader material. You can find the shader code in 'src/SpriteShader.js'. The shader will render a single sprite sequence based on input uniforms. Each uniform corresponds to a value from the Json data.
 
 Shader Uniforms:
 - _spriteAtlasTex: sprite sheet
