@@ -1,5 +1,5 @@
 # TexturePacker-Animator-Threejs
-Sprite animation with the sprite sheet generated from [TexurePackaer](https://www.codeandweb.com/texturepacker), for three.js. Works with trimmed and rotated sprites. The sprite is animated based on the Json (Array) data exported. 
+Sprite animation with the sprite sheet generated from [TexurePacker](https://www.codeandweb.com/texturepacker), for three.js. Works with trimmed and rotated sprites. The sprite is animated based on the Json (Array) data exported. 
 
 Here is a [Live demo](https://knowercoder.github.io/TexturePacker-Animator-Threejs/). Upload the sprite sheet and the Json file exported from the Texture packer.
 
