@@ -1,57 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Three.js Sprite Loader</title>
-    <script type="module" crossorigin src="/TexturePacker-Animator-Threejs/assets/index-DDITswsz.js"></script>
-    <link rel="stylesheet" crossorigin href="/TexturePacker-Animator-Threejs/assets/index-aweFVi-2.css">
-  </head>
-  <body>
-    <!-- Top toolbar in column layout -->
-    <div class="toolbar">
-      <!-- Row 1: Buttons + status text -->
-      <div class="button-row">
-        <label for="spriteFileInput" class="file-button" id="spriteButtonLabel">
-          Load Sprite
-        </label>
-        <input
-          type="file"
-          id="spriteFileInput"
-          accept="image/png,image/jpeg"
-          style="display: none"
-        />
-        <span id="spriteFileStatus">No sprite loaded</span>
-
-        <label for="jsonFileInput" class="file-button" id="jsonButtonLabel">
-          Load JSON
-        </label>
-        <input
-          type="file"
-          id="jsonFileInput"
-          accept="application/json"
-          style="display: none"
-        />
-        <span id="jsonFileStatus">No JSON loaded</span>
-      </div>
-
-      <!-- Row 2: Frame Rate Input -->
-      <div class="frame-rate-row">
-        <label for="frameRateInput">Frame Rate:</label>
-        <input
-          type="number"
-          id="frameRateInput"
-          value="25"
-          min="1"
-          max="60"
-          style="width: 60px;"
-        />
-      </div>
-    </div>
-
-    <!-- Centered box for the sprite plane -->
-    <div class="sprite-container">
-      <canvas class="webgl"></canvas>
-    </div>
-
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js Sprite Utils</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        a {
+            display: block;
+            font-size: 20px;
+            text-decoration: none;
+            color: blue;
+            border: 2px solid blue;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px auto;
+            width: 250px;
+        }
+        a:hover {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Three.js Sprite Utils</h1>
+    <p>Click the links to open the demo:</p>
+    <a href="spriteAnimator.html" target="_blank">Sprite sheet animation</a>
+    <a href="sprite2DOutline.html" target="_blank">2D Sprite Outline</a>
+    <a href="spriteAnimatorOutline.html" target="_blank">Sprite sheet animation with outline</a>
+</body>
 </html>
