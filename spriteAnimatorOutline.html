@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sprite sheet Animator</title>
+    <script type="module" crossorigin src="/threejs-sprite-utils/assets/spriteAnimatorOutline-B7d5Itzq.js"></script>
+    <link rel="modulepreload" crossorigin href="/threejs-sprite-utils/assets/three.module-D6KpNp-z.js">
+    <link rel="modulepreload" crossorigin href="/threejs-sprite-utils/assets/Outline2DShader-DX2DK67Z.js">
+    <link rel="modulepreload" crossorigin href="/threejs-sprite-utils/assets/SpriteAnimatorShader-BXx9UAM9.js">
+    <link rel="stylesheet" crossorigin href="/threejs-sprite-utils/assets/three-aweFVi-2.css">
+  </head>
+  <body>
+    <!-- Top toolbar in column layout -->
+    <div class="toolbar">
+      <!-- Row 1: Buttons + status text -->
+      <div class="button-row">
+        <label for="spriteFileInput" class="file-button" id="spriteButtonLabel">
+          Load Sprite
+        </label>
+        <input
+          type="file"
+          id="spriteFileInput"
+          accept="image/png,image/jpeg"
+          style="display: none"
+        />
+        <span id="spriteFileStatus">No sprite loaded</span>
+
+        <label for="jsonFileInput" class="file-button" id="jsonButtonLabel">
+          Load JSON
+        </label>
+        <input
+          type="file"
+          id="jsonFileInput"
+          accept="application/json"
+          style="display: none"
+        />
+        <span id="jsonFileStatus">No JSON loaded</span>
+      </div>
+
+      <!-- Row 2: Frame Rate Input -->
+      <div class="frame-rate-row">
+        <label for="frameRateInput">Frame Rate:</label>
+        <input
+          type="number"
+          id="frameRateInput"
+          value="25"
+          min="1"
+          max="60"
+          style="width: 60px;"
+        />
+      </div>
+    </div>
+
+    <!-- Centered box for the sprite plane -->
+    <div class="sprite-container">
+      <canvas class="webgl"></canvas>
+    </div>
+
+  </body>
+</html>
