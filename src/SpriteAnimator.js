@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { SpriteShader } from './SpriteShader';
+import { SpriteAnimatorShader } from './shaders/SpriteAnimatorShader';
 
 // Select DOM elements
 const spriteFileInput = document.getElementById('spriteFileInput');
@@ -64,8 +64,8 @@ const material = new THREE.ShaderMaterial({
       _isRotated: {value: false} // rotated
            
     },
-    vertexShader: SpriteShader.vertexShader,
-    fragmentShader: SpriteShader.fragmentShader,
+    vertexShader: SpriteAnimatorShader.vertexShader,
+    fragmentShader: SpriteAnimatorShader.fragmentShader,
     transparent: true,
 });
 

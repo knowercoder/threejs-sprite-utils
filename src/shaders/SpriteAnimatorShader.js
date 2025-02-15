@@ -1,5 +1,5 @@
 
-const SpriteShader = {
+const SpriteAnimatorShader = {
 
     vertexShader: /* glsl */ `
                         
@@ -78,4 +78,4 @@ const SpriteShader = {
 
 };
 
-export { SpriteShader }
+export { SpriteAnimatorShader }

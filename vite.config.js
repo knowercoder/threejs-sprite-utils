@@ -1,5 +1,8 @@
 export default {
-    base: '/TexturePacker-Animator-Threejs/',
+    base: '/threejs-sprite-utils/',
+    server: {
+      open: true, // Opens browser automatically
+    },
     build: {
       outDir: 'dist',
     },
