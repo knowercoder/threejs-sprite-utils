@@ -5,5 +5,13 @@ export default {
     },
     build: {
       outDir: 'dist',
+      rollupOptions: {
+        input: {
+          main: "index.html",
+          spriteAnimator: "spriteAnimator.html",
+          sprite2DOutline: "sprite2DOutline.html",
+          spriteAnimatorOutline: "spriteAnimatorOutline.html"
+        }
+      }
     },
   };
