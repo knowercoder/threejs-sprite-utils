@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sprite Orientation</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h2 style="text-align: center; margin-top: 20px;">Sprite Orientation</h2>
+    <p style="text-align: center; margin: 10px 20px; font-size: 16px; color: #555;">      
+      In this demo, the sprite is rendered by a custom shader, at different orientations. <br>
+      You can use this effect in 2D apps, where you dont want to rotate the sprite itself but make viaually appear rotated
+    </p>
+
+    <!-- Centered box for the sprite plane -->
+    <div class="sprite-container">
+      <canvas class="webgl"></canvas>
+    </div>
+
+    <script type="module" src="/src/spriteOrientation.js"></script>
+  </body>
+</html>
