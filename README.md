@@ -1,11 +1,11 @@
 # Three.js Sprite Utils
 This repository consists of scripts and shaders for 2D sprite usage in three.js. [Click here](https://knowercoder.github.io/threejs-sprite-utils/) for the examples.
 
-Current implementations:
-1. Texture Packer sprite sheet animation
-2. 2D sprite outline
-3. Texture Packer animator with outline as a second pass
-4. 2D sprite orientation
+### Current implementations:
+1. [Texture Packer sprite sheet animation](#1-texture-packer-sprite-sheet-animation)
+2. [2D sprite outline](#2-2d-sprite-outline)
+3. [Texture Packer animator with outline as a second pass](#3-texture-packer-animator-with-outline-as-a-second-pass)
+4. [2D sprite orientation](#4-sprite-orientation)
 
 ## 1. Texture Packer sprite sheet animation
 Sprite animation with the sprite sheet generated from [TexurePacker](https://www.codeandweb.com/texturepacker). Works with trimmed and rotated sprites. The sprite is animated based on the Json (Array) data exported. 
