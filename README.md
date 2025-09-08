@@ -17,7 +17,7 @@ Sprite animation with the sprite sheet generated from [TexurePacker](https://www
 
 #### How it works:
 
-The sprite is rendered onto a plane mesh with a custom shader material. You can find the shader code in 'src/shaders/SpriteAnimatorShader.js'. The shader will render a single sprite sequence based on input uniforms. Each uniform corresponds to a value from the Json data.
+The sprite is rendered on a sprite with a custom shader material. You can find the shader code in 'src/shaders/SpriteAnimatorShader.js'. The shader will render a single sprite sequence based on input uniforms. Each uniform corresponds to a value from the Json data.
 
 #### Shader Uniforms:
 - _spriteAtlasTex: sprite sheet
