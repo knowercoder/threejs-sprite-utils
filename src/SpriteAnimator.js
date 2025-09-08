@@ -69,9 +69,8 @@ const material = new THREE.ShaderMaterial({
     transparent: true,
 });
 
-const geometry = new THREE.PlaneGeometry(1, 1);
-const plane = new THREE.Mesh(geometry, material);
-scene.add(plane);
+const sprite = new THREE.Sprite(material);
+scene.add(sprite);
 
 // Handle window resize
 window.addEventListener('resize', () => {
